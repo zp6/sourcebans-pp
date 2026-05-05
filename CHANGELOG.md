@@ -10,6 +10,14 @@ Legend:
 ? = Other stuff
 ```
 
+(04/05/26): Version 1.8.4
+-----------------------
+> [!NOTE]
+> Hotfix release.
+```
+01. ! Search by Steam ID returned no results for bans/comms whose `authid` was stored as `STEAM_1:Y:Z` (e.g. rows written by the SourceMod plugin on TF2/L4D). The 1.8.0 normalization step always rewrote the search query to `STEAM_0` form, so strict equality silently missed the other universe digit. Both the simple search and the advanced "steamid" search now match the same `^STEAM_[0-9]:Y:Z$` pattern the plugin uses, so either input form finds either stored form. (#1128, #1130)
+```
+
 (04/05/26): Version 1.8.3
 -----------------------
 > [!NOTE]
