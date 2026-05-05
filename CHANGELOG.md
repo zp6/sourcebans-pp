@@ -10,6 +10,14 @@ Legend:
 ? = Other stuff
 ```
 
+(04/05/26): Version 1.8.3
+-----------------------
+> [!NOTE]
+> Hotfix release. Restores 1.7.x "Steam-only login" behaviour that regressed in 1.8.1.
+```
+01. ! Steam-only login setups broken after upgrading from 1.7.x — restore prior semantics for the (mislabelled) "Enable Normal Login" Features checkbox so unchecking it once again hides the username/password form while keeping the Steam button visible (#1129, reverts #1067). The proper split into independent normal/Steam login toggles will land in 1.9.0 via #1102/#1103.
+```
+
 (10/11/24): Version 1.8.1 (**Run updater required**)
 -----------------------
 > [!IMPORTANT]
